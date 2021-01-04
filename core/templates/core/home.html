@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/myphoto.jpg' %}" alt="Profile Picture" class="img-thumbnail" width="250px" height="150px">
+    </div>
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height: 2rem;">
+            <p style="text-indent: 100px">
+                I'm <b class="text-warning">Aslonov Ismoil</b>. I was born on January 1, 2000 in Mirzachul district Gagarin city
+                and nowadays I have been studying at Uzbek State World Languages University.
+                I studied Web Development course at PDP Academy. My technical skills: <b class="text-warning">Python, Django, HTML 5, CSS3, SASS,
+                BOOTSTRAP 4, JS, REACT, SQL, PostgreSQL</b> . Additionally I know English conversationally. My goal: I am looking
+                for a sincere team. I can promise to be stronger by working on myself and I won't stop there.
+                I want to have a place in your team in the future!!!
+            </p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-info px-5 my-3">Contact</a>
+    </div>
+</div>
+{% endblock content %}
